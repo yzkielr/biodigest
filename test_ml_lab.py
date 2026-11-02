@@ -27,7 +27,7 @@ class LabTests(unittest.TestCase):
             self.assertEqual(row["Tebakan sederhana"], previous.loc[row["Tanggal prediksi"] - pd.Timedelta(days=1)])
 
     def test_page_train_and_switch_model(self):
-        app = AppTest.from_file("app.py").run(timeout=60)
+        app = AppTest.from_file("streamlit_app.py").run(timeout=60)
         app.sidebar.selectbox[0].set_value("Latihan ML").run(timeout=60)
         self.assertFalse(app.exception)
         app.button[0].click().run(timeout=60)

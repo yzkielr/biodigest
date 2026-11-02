@@ -1,0 +1,16 @@
+.venv
+.deps
+.web-deps
+.deploy-deps
+.browser-check
+__pycache__
+.git
+.env*
+*.png
+models
+scripts
+test_*.py
+streamlit_app.py
+ml_lab.py
+csv_data.py
+.streamlit

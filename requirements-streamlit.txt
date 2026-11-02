@@ -1,0 +1,4 @@
+-r requirements.txt
+streamlit>=1.38
+plotly>=5.24
+joblib>=1.4

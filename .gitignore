@@ -12,3 +12,6 @@ scripts/__pycache__/
 *.key
 *-ui-check.png
 .pytest_cache/
+.web-deps/
+.deploy-deps/
+.vercel/

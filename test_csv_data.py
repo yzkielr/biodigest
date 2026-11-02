@@ -33,7 +33,7 @@ class CsvTests(unittest.TestCase):
         self.assertTrue(warnings)
 
     def test_dashboard_demo_and_upload(self):
-        app = AppTest.from_file('app.py').run(timeout=60)
+        app = AppTest.from_file('streamlit_app.py').run(timeout=60)
         self.assertFalse(app.exception)
         app.sidebar.radio[0].set_value('Unggah CSV').run(timeout=60)
         self.assertFalse(app.exception)

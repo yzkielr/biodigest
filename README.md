@@ -1,5 +1,10 @@
 # Smart Biodigester MVP
 
+**Versi web Vercel:** aplikasi utama sekarang menggunakan Flask (`app.py`) dengan dashboard
+HTML/CSS/JavaScript. Jalankan `python app.py` dan buka http://127.0.0.1:8000.
+Lihat [panduan deployment](DEPLOY.md) untuk instalasi, konfigurasi Vercel, dan endpoint API.
+Versi Streamlit sebelumnya disimpan di `streamlit_app.py` untuk penggunaan lokal.
+
 Prototype software untuk lomba: data biodigester -> machine learning -> prediksi -> dashboard.
 
 ## Fungsi MVP
@@ -15,10 +20,10 @@ Prototype software untuk lomba: data biodigester -> machine learning -> prediksi
 cd sucofindo
 python -m venv .venv
 .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+pip install -r requirements-streamlit.txt
 python scripts/generate_data.py
 python scripts/train_model.py
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 Buka URL yang ditampilkan Streamlit, biasanya `http://localhost:8501`.
@@ -49,7 +54,7 @@ Untuk instalasi lokal yang sudah menggunakan `.deps`:
 ```powershell
 cd C:\1\Bekerja\sucofindo
 $env:PYTHONPATH=(Resolve-Path .deps).Path
-.\.venv\Scripts\python.exe -m streamlit run app.py
+.\.venv\Scripts\python.exe -m streamlit run streamlit_app.py
 ```
 
 ## Pengembangan selanjutnya
