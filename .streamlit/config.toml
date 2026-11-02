@@ -1,0 +1,21 @@
+[global]
+developmentMode = false
+
+[theme]
+base = "light"
+primaryColor = "#147D70"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6F8FA"
+textColor = "#182B36"
+font = "sans serif"
+
+[server]
+headless = true
+address = "127.0.0.1"
+port = 8501
+enableCORS = true
+
+[browser]
+serverAddress = "127.0.0.1"
+serverPort = 8501
+gatherUsageStats = false
